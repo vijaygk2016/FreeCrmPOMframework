@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 3 failed,  6 skipped,  3 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,  9 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,17 +102,7 @@
                     <div class="method-list-content failed suite-FREE_CRM_Application_Test_Automation_Test_Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FREE_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.HomePageTest" hash-for-method="verifyContactsLinkTest">verifyContactsLinkTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FREE_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.HomePageTest" hash-for-method="verifyHomePageTitleTest">verifyHomePageTitleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FREE_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.HomePageTest" hash-for-method="verifyUserNameTest">verifyUserNameTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-FREE_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.LoginPageTest" hash-for-method="LoginTest">LoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-FREE_CRM_Application_Test_Automation_Test_Suite -->
@@ -151,7 +141,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FREE_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.HomePageTest" hash-for-method="verifyContactsLinkTest">verifyContactsLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-FREE_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.ContactsPageTest" hash-for-method="verifyContactsPageLabel">verifyContactsPageLabel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FREE_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.HomePageTest" hash-for-method="verifyHomePageTitleTest">verifyHomePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FREE_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.HomePageTest" hash-for-method="verifyUserNameTest">verifyUserNameTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-FREE_CRM_Application_Test_Automation_Test_Suite -->
@@ -163,11 +168,6 @@
                       <a href="#" panel-name="suite-FREE_CRM_Application_Test_Automation_Test_Suite" class="show-methods passed suite-FREE_CRM_Application_Test_Automation_Test_Suite"> (show)</a> <!-- show-methods passed suite-FREE_CRM_Application_Test_Automation_Test_Suite -->
                     </span>
                     <div class="method-list-content passed suite-FREE_CRM_Application_Test_Automation_Test_Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FREE_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.LoginPageTest" hash-for-method="LoginTest">LoginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-FREE_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.LoginPageTest" hash-for-method="crmLogoImageTest">crmLogoImageTest</a> <!-- method navigator-link -->
@@ -193,51 +193,41 @@
           <div class="suite-FREE_CRM_Application_Test_Automation_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.crm.qa.testcases.HomePageTest</span>
+              <span class="class-name">com.crm.qa.testcases.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyContactsLinkTest">
-                  </a> <!-- verifyContactsLinkTest -->
-                  <span class="method-name">verifyContactsLinkTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+                  <a name="LoginTest">
+                  </a> <!-- LoginTest -->
+                  <span class="method-name">LoginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;username11&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
 System info: host: &apos;M270967DZG3QD&apos;, ip: &apos;fe80:0:0:0:18bd:32bc:9be5:849a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.frame(EventFiringWebDriver.java:606)
-	at com.crm.qa.util.TestUtil.switchToFrame(TestUtil.java:30)
-	at com.crm.qa.testcases.HomePageTest.verifyContactsLinkTest(HomePageTest.java:53)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyHomePageTitleTest">
-                  </a> <!-- verifyHomePageTitleTest -->
-                  <span class="method-name">verifyHomePageTitleTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: Home page title not matched expected [CRMPRO] but found [#1 Free CRM for Any Business: Online Customer Relationship Software]
-	at com.crm.qa.testcases.HomePageTest.verifyHomePageTitleTest(HomePageTest.java:42)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUserNameTest">
-                  </a> <!-- verifyUserNameTest -->
-                  <span class="method-name">verifyUserNameTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
-Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
-System info: host: &apos;M270967DZG3QD&apos;, ip: &apos;fe80:0:0:0:18bd:32bc:9be5:849a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.frame(EventFiringWebDriver.java:606)
-	at com.crm.qa.util.TestUtil.switchToFrame(TestUtil.java:30)
-	at com.crm.qa.testcases.HomePageTest.verifyUserNameTest(HomePageTest.java:47)
-... Removed 25 stack frames
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160421124000, version=46.0, platform=MAC, proxy=Proxy(), specificationLevel=1, acceptSslCerts=false, browserVersion=46.0, platformVersion=16.7.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=MAC, device=desktop}]
+Session ID: 0178c28d-c040-3746-ab76-076ced39bc46
+*** Element info: {Using=name, value=username11}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
+	at com.crm.qa.testcases.LoginPageTest.LoginTest(LoginPageTest.java:41)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -254,15 +244,33 @@ Driver info: driver.version: unknown
                   <a name="selectMultipleContactsTest">
                   </a> <!-- selectMultipleContactsTest -->
                   <span class="method-name">selectMultipleContactsTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;username11&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
 System info: host: &apos;M270967DZG3QD&apos;, ip: &apos;fe80:0:0:0:18bd:32bc:9be5:849a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.frame(EventFiringWebDriver.java:606)
-	at com.crm.qa.util.TestUtil.switchToFrame(TestUtil.java:30)
-	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:36)
-... Removed 27 stack frames
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160421124000, version=46.0, platform=MAC, proxy=Proxy(), specificationLevel=1, acceptSslCerts=false, browserVersion=46.0, platformVersion=16.7.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=MAC, device=desktop}]
+Session ID: 08760852-1e06-5746-a700-8713d907d7d5
+*** Element info: {Using=name, value=username11}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
+	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:35)
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -271,15 +279,33 @@ Driver info: driver.version: unknown
                   <a name="selectSingleContactsTest">
                   </a> <!-- selectSingleContactsTest -->
                   <span class="method-name">selectSingleContactsTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;username11&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
 System info: host: &apos;M270967DZG3QD&apos;, ip: &apos;fe80:0:0:0:18bd:32bc:9be5:849a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.frame(EventFiringWebDriver.java:606)
-	at com.crm.qa.util.TestUtil.switchToFrame(TestUtil.java:30)
-	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:36)
-... Removed 27 stack frames
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160421124000, version=46.0, platform=MAC, proxy=Proxy(), specificationLevel=1, acceptSslCerts=false, browserVersion=46.0, platformVersion=16.7.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=MAC, device=desktop}]
+Session ID: 08760852-1e06-5746-a700-8713d907d7d5
+*** Element info: {Using=name, value=username11}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
+	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:35)
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -288,15 +314,33 @@ Driver info: driver.version: unknown
                   <a name="validateCreateNewContact">
                   </a> <!-- validateCreateNewContact -->
                   <span class="method-name">validateCreateNewContact</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;username11&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
 System info: host: &apos;M270967DZG3QD&apos;, ip: &apos;fe80:0:0:0:18bd:32bc:9be5:849a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.frame(EventFiringWebDriver.java:606)
-	at com.crm.qa.util.TestUtil.switchToFrame(TestUtil.java:30)
-	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:36)
-... Removed 27 stack frames
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160421124000, version=46.0, platform=MAC, proxy=Proxy(), specificationLevel=1, acceptSslCerts=false, browserVersion=46.0, platformVersion=16.7.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=MAC, device=desktop}]
+Session ID: 08760852-1e06-5746-a700-8713d907d7d5
+*** Element info: {Using=name, value=username11}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
+	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:35)
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -305,15 +349,33 @@ Driver info: driver.version: unknown
                   <a name="validateCreateNewContact">
                   </a> <!-- validateCreateNewContact -->
                   <span class="method-name">validateCreateNewContact</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;username11&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
 System info: host: &apos;M270967DZG3QD&apos;, ip: &apos;fe80:0:0:0:18bd:32bc:9be5:849a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.frame(EventFiringWebDriver.java:606)
-	at com.crm.qa.util.TestUtil.switchToFrame(TestUtil.java:30)
-	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:36)
-... Removed 27 stack frames
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160421124000, version=46.0, platform=MAC, proxy=Proxy(), specificationLevel=1, acceptSslCerts=false, browserVersion=46.0, platformVersion=16.7.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=MAC, device=desktop}]
+Session ID: 08760852-1e06-5746-a700-8713d907d7d5
+*** Element info: {Using=name, value=username11}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
+	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:35)
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -322,15 +384,33 @@ Driver info: driver.version: unknown
                   <a name="validateCreateNewContact">
                   </a> <!-- validateCreateNewContact -->
                   <span class="method-name">validateCreateNewContact</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;username11&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
 System info: host: &apos;M270967DZG3QD&apos;, ip: &apos;fe80:0:0:0:18bd:32bc:9be5:849a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.frame(EventFiringWebDriver.java:606)
-	at com.crm.qa.util.TestUtil.switchToFrame(TestUtil.java:30)
-	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:36)
-... Removed 27 stack frames
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160421124000, version=46.0, platform=MAC, proxy=Proxy(), specificationLevel=1, acceptSslCerts=false, browserVersion=46.0, platformVersion=16.7.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=MAC, device=desktop}]
+Session ID: 08760852-1e06-5746-a700-8713d907d7d5
+*** Element info: {Using=name, value=username11}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
+	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:35)
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -339,15 +419,146 @@ Driver info: driver.version: unknown
                   <a name="verifyContactsPageLabel">
                   </a> <!-- verifyContactsPageLabel -->
                   <span class="method-name">verifyContactsPageLabel</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;username11&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
 System info: host: &apos;M270967DZG3QD&apos;, ip: &apos;fe80:0:0:0:18bd:32bc:9be5:849a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.frame(EventFiringWebDriver.java:606)
-	at com.crm.qa.util.TestUtil.switchToFrame(TestUtil.java:30)
-	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:36)
-... Removed 27 stack frames
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160421124000, version=46.0, platform=MAC, proxy=Proxy(), specificationLevel=1, acceptSslCerts=false, browserVersion=46.0, platformVersion=16.7.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=MAC, device=desktop}]
+Session ID: 08760852-1e06-5746-a700-8713d907d7d5
+*** Element info: {Using=name, value=username11}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
+	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:35)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FREE_CRM_Application_Test_Automation_Test_Suite-class-skipped -->
+          <div class="suite-FREE_CRM_Application_Test_Automation_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.crm.qa.testcases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyContactsLinkTest">
+                  </a> <!-- verifyContactsLinkTest -->
+                  <span class="method-name">verifyContactsLinkTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;username11&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;M270967DZG3QD&apos;, ip: &apos;fe80:0:0:0:18bd:32bc:9be5:849a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160421124000, version=46.0, platform=MAC, proxy=Proxy(), specificationLevel=1, acceptSslCerts=false, browserVersion=46.0, platformVersion=16.7.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=MAC, device=desktop}]
+Session ID: fc26b1ef-71ce-ec4e-8fe3-0d069852ebce
+*** Element info: {Using=name, value=username11}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
+	at com.crm.qa.testcases.HomePageTest.setUp(HomePageTest.java:35)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitleTest">
+                  </a> <!-- verifyHomePageTitleTest -->
+                  <span class="method-name">verifyHomePageTitleTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;username11&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;M270967DZG3QD&apos;, ip: &apos;fe80:0:0:0:18bd:32bc:9be5:849a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160421124000, version=46.0, platform=MAC, proxy=Proxy(), specificationLevel=1, acceptSslCerts=false, browserVersion=46.0, platformVersion=16.7.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=MAC, device=desktop}]
+Session ID: fc26b1ef-71ce-ec4e-8fe3-0d069852ebce
+*** Element info: {Using=name, value=username11}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
+	at com.crm.qa.testcases.HomePageTest.setUp(HomePageTest.java:35)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserNameTest">
+                  </a> <!-- verifyUserNameTest -->
+                  <span class="method-name">verifyUserNameTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;username11&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;M270967DZG3QD&apos;, ip: &apos;fe80:0:0:0:18bd:32bc:9be5:849a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160421124000, version=46.0, platform=MAC, proxy=Proxy(), specificationLevel=1, acceptSslCerts=false, browserVersion=46.0, platformVersion=16.7.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=MAC, device=desktop}]
+Session ID: fc26b1ef-71ce-ec4e-8fe3-0d069852ebce
+*** Element info: {Using=name, value=username11}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:44)
+	at com.crm.qa.testcases.HomePageTest.setUp(HomePageTest.java:35)
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -359,13 +570,6 @@ Driver info: driver.version: unknown
               <span class="class-name">com.crm.qa.testcases.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginTest">
-                  </a> <!-- LoginTest -->
-                  <span class="method-name">LoginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="crmLogoImageTest">
@@ -392,6 +596,9 @@ Driver info: driver.version: unknown
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;FREE CRM Application Test Automation Test Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.crm.qa.ExtentReportListener.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;Free CRM App Test Cases&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.crm.qa.testcases.LoginPageTest&quot;/&gt;
@@ -440,33 +647,33 @@ data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginTest')
 data.setCell(0, 2, 'com.crm.qa.testcases.LoginPageTest')
-data.setCell(0, 3, 107);
+data.setCell(0, 3, 189);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'crmLogoImageTest')
 data.setCell(1, 2, 'com.crm.qa.testcases.LoginPageTest')
-data.setCell(1, 3, 41);
+data.setCell(1, 3, 45);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyContactsLinkTest')
-data.setCell(2, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(2, 3, 16);
+data.setCell(2, 1, 'loginPageTitleTest')
+data.setCell(2, 2, 'com.crm.qa.testcases.LoginPageTest')
+data.setCell(2, 3, 6);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyUserNameTest')
-data.setCell(3, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(3, 3, 13);
+data.setCell(3, 1, 'verifyContactsPageLabel')
+data.setCell(3, 2, 'com.crm.qa.testcases.ContactsPageTest')
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginPageTitleTest')
-data.setCell(4, 2, 'com.crm.qa.testcases.LoginPageTest')
-data.setCell(4, 3, 8);
+data.setCell(4, 1, 'validateCreateNewContact')
+data.setCell(4, 2, 'com.crm.qa.testcases.ContactsPageTest')
+data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyHomePageTitleTest')
-data.setCell(5, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(5, 3, 6);
+data.setCell(5, 1, 'selectSingleContactsTest')
+data.setCell(5, 2, 'com.crm.qa.testcases.ContactsPageTest')
+data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyContactsPageLabel')
-data.setCell(6, 2, 'com.crm.qa.testcases.ContactsPageTest')
+data.setCell(6, 1, 'verifyUserNameTest')
+data.setCell(6, 2, 'com.crm.qa.testcases.HomePageTest')
 data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'selectSingleContactsTest')
+data.setCell(7, 1, 'selectMultipleContactsTest')
 data.setCell(7, 2, 'com.crm.qa.testcases.ContactsPageTest')
 data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
@@ -474,12 +681,12 @@ data.setCell(8, 1, 'validateCreateNewContact')
 data.setCell(8, 2, 'com.crm.qa.testcases.ContactsPageTest')
 data.setCell(8, 3, 0);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'validateCreateNewContact')
-data.setCell(9, 2, 'com.crm.qa.testcases.ContactsPageTest')
+data.setCell(9, 1, 'verifyHomePageTitleTest')
+data.setCell(9, 2, 'com.crm.qa.testcases.HomePageTest')
 data.setCell(9, 3, 0);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'selectMultipleContactsTest')
-data.setCell(10, 2, 'com.crm.qa.testcases.ContactsPageTest')
+data.setCell(10, 1, 'verifyContactsLinkTest')
+data.setCell(10, 2, 'com.crm.qa.testcases.HomePageTest')
 data.setCell(10, 3, 0);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'validateCreateNewContact')
@@ -489,7 +696,7 @@ window.suiteTableData['FREE_CRM_Application_Test_Automation_Test_Suite']= { tabl
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 191 ms</span>
+              <span class="suite-total-time">Total running time: 240 ms</span>
               <div id="times-div-FREE_CRM_Application_Test_Automation_Test_Suite">
               </div> <!-- times-div-FREE_CRM_Application_Test_Automation_Test_Suite -->
             </div> <!-- times-div -->
@@ -521,54 +728,48 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">LoginTest</span>
-                <span class="method-start">7058 ms</span>
+                <span class="method-start">9741 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7166 ms</span>
+                <span class="method-start">9932 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">7305 ms</span>
+                <span class="method-start">10092 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">crmLogoImageTest</span>
-                <span class="method-start">14517 ms</span>
+                <span class="method-start">18882 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14559 ms</span>
+                <span class="method-start">18928 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">14682 ms</span>
+                <span class="method-start">19045 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">20803 ms</span>
+                <span class="method-start">29225 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20811 ms</span>
+                <span class="method-start">29232 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">20936 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyHomePageTitleTest</span>
-                <span class="method-start">27415 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">27423 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-name">setUp</span>
+                <span class="method-start">29362 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.ContactsPageTest</div> <!-- chronological-class-name -->
@@ -576,39 +777,8 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">27555 ms</span>
+                <span class="method-start">40202 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.crm.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">34441 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyUserNameTest</span>
-                <span class="method-start">40537 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">40551 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">40679 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyContactsLinkTest</span>
-                <span class="method-start">48451 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">48468 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
