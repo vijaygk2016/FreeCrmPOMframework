@@ -3,11 +3,14 @@ package com.crm.qa.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
@@ -39,7 +42,13 @@ public class TestBase {
 		String browserName= prop.getProperty("browser");
 		if(browserName.equals("chrome")){
 			System.setProperty("webdriver.chrome.driver", "/Users/laxman_kouja/Documents/GitHub/FEATLe/src/test/resources/lib/chromedriver");	
-			driver = new ChromeDriver(); 
+			Map<String, Object> prefs = new HashMap<String, Object>();
+			prefs.put("download.default_directory",  System.getProperty("user.dir"));
+			ChromeOptions options = new ChromeOptions();
+			options.setExperimentalOption("prefs", prefs);
+			driver = new ChromeDriver(options);
+			//driver = new ChromeDriver(); 
+			
 		}
 		else if(browserName.equals("FF")){
 			System.setProperty("webdriver.gecko.driver","/Users/laxman_kouja/Documents/GitHub/FEATLe/src/test/resources/lib/geckodriver");	
